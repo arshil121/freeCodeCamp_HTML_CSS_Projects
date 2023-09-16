@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma;
+  font-size: 20px;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+}
+.container img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px); /* Adjust the blur radius as needed */
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+p{
+  font-style: italic;
+}
+
+form {
+  background-color: #252445;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #fff;
+  color: #0a0a23;
+  border: 1px solid #0a0a23;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}

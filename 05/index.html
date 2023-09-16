@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/BGimage.jpeg" alt="" />
+    </div>
+
+    <div class="main">
+      <nav>
+        <h1 id="title">Arshil's Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </nav>
+
+      <form action="#" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Your Email"
+          required
+        />
+
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input type="number" id="number" min="13" max="120" placeholder="age" />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="currentRole" id="dropdown">
+          <option value="">Select Current Role</option>
+          <option value="1">Student</option>
+          <option value="2">Full-time job</option>
+          <option value="3">Full-time learner</option>
+          <option value="4">Freelancer</option>
+          <option value="5">Other</option>
+        </select>
+
+        <label for="gender ">Gender:</label>
+        <div class="gender-options">
+          <label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              class="inline"
+            />
+            Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              class="inline"
+            />
+            Female
+          </label>
+          <label>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              class="inline"
+            />
+            Other
+          </label>
+        </div>
+
+        <label for="sports">Choose your interests in sports</label>
+        <label>
+          <input
+            type="checkbox"
+            name="interest"
+            value="sports"
+            class="inline"
+          />
+          Sports
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="music" class="inline" />
+          Music
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="interest"
+            value="movies"
+            class="inline"
+          />
+          Movies
+        </label>
+
+        <label for="bio"
+          >Any comments or suggestions?
+          <textarea
+            id="bio"
+            rows="8"
+            cols="30"
+            name="bio"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <div id="app"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
