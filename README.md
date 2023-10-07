@@ -29,4 +29,4 @@ Feel free to explore each project, modify the code, or use them as a reference f
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [freecodecamp](https://www.freecodecamp.org/learn/2022/responsive-web-design).
